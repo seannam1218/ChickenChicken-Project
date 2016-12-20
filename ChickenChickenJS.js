@@ -45,15 +45,15 @@
 	var isThereDiscussionBoardImage = false;
 	var discussionBoardOnClick = function (event) {
 		if (!isThereDiscussionBoardImage) {
-			var DiscussionBoardImage = document.createElement("img");
-			DiscussionBoardImage.src="http://community.bamboosolutions.com/cfs-filesystemfile.ashx/__key/CommunityServer.Components.ImageFileViewer/CommunityServer.Blogs.Components.WeblogFiles.bambooteamblog/Discussion-Board-Plus-04.png_2D00_725x0.png";
-			DiscussionBoardImage.setAttribute("width", "100%");
-			DiscussionBoardImage.alt = "A screenshot of a discussion board";	
+			var discussionBoardImage = document.createElement("img");
+			discussionBoardImage.src="http://community.bamboosolutions.com/cfs-filesystemfile.ashx/__key/CommunityServer.Components.ImageFileViewer/CommunityServer.Blogs.Components.WeblogFiles.bambooteamblog/Discussion-Board-Plus-04.png_2D00_725x0.png";
+			discussionBoardImage.setAttribute("width", "100%");
+			discussionBoardImage.alt = "A screenshot of a discussion board";	
 			
 			var dbps = document.getElementById("discussionBoardText").getElementsByTagName("p");
 			for (var i = 0; i < dbps.length; i++) {
 				dbps[i].innerHTML = "Note: This function is not available yet :,(";
-				dbps[i].appendChild(DiscussionBoardImage);	
+				dbps[i].appendChild(discussionBoardImage);	
 			}
 			isThereDiscussionBoardImage = true;
 		}
